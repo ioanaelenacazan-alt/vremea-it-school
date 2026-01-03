@@ -1,4 +1,7 @@
-const button = document.getElementById('button');
+function updateCity (city){
+    console.log("Am selectat orasul, city",city)
+}
 
-button.addEventListener('click', () => { 
-console.log('Butonul a fost apasat!'});
+
+
+
