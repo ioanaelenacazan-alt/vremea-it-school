@@ -20,11 +20,26 @@ scrollTopBtn.addEventListener("click", () => {
 function updateCity(city) {
   displayCurrentWeather(city);
   displayCurrentForecast(city);
+  localStorage.setItem("city", city);
 
   console.log("Am selectat orasul, city", city);
   const cityElement = document.getElementById("bigCity");
   cityElement.innerHTML = city;
 }
+
+function loadFromLocalStorage() {
+  const city = localStorage.getItem("city");
+  if (city) {
+    updateCity(city);
+  } else {
+    updateCity("București");
+  }
+}
+
+window.onload = function () {
+  loadFromLocalStorage();
+};
+
 function displayCurrentWeather(city) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ro`
