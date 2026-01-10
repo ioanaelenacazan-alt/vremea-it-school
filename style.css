@@ -53,3 +53,27 @@ main {
 header {
   height: 30vh;
 }
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  border: none;
+  background-color: #101d42;
+  color: white;
+  font-size: 20px;
+
+  cursor: pointer;
+  display: none; /* ascuns initial */
+  z-index: 999;
+}
+
+#scrollTopBtn:hover {
+  background-color: #2bb686;
+}
