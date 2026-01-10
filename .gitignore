@@ -1,0 +1,12 @@
+# IDE
+.idea/
+
+# macOS
+.DS_Store
+
+# Node (pentru viitor)
+node_modules/
+
+# env
+.env
+
