@@ -1,4 +1,4 @@
-const apiKey = "xxx";
+const apiKey = "x";
 
 function updateCity(city) {
   displayCurrentWeather(city);
